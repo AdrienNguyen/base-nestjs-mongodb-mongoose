@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "l2e-backend": "apps/l2e-backend"
+  }
+}

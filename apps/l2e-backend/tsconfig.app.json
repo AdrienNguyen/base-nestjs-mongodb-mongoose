@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "../../dist/out-tsc",
+    "module": "commonjs",
+    "types": ["node"],
+    "emitDecoratorMetadata": true,
+    "target": "es2015",
+    "esModuleInterop": true,
+    "paths": {
+      "@src/*": ["src/*"],
+      "@cores/*": ["src/cores/*"],
+      "@database/*": ["src/database/*"],
+      "@users/*": ["src/modules/users/*"],
+      "@activation-codes/*": ["src/modules/activation-codes/*"],
+      "@auth/*": ["src/modules/auth/*"],
+      "@user-otps/*": ["src/modules/user-otps/*"],
+      "@emails/*": ["src/modules/emails/*"]
+    }
+  },
+  "exclude": ["jest.config.ts", "**/*.spec.ts", "**/*.test.ts"],
+  "include": ["**/*.ts"]
+}
